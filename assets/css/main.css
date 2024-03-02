@@ -3460,7 +3460,7 @@ input, select, textarea {
 		background-image: url("../../images/Introduction-to-Healthcare.jpg");
 		background-position: center center;
 		background-size: cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		box-shadow: 0 0.25em 0.5em 0 rgba(196, 46, 46, 0.25);
 		min-height: 100vh;
 		position: relative;
 		text-align: center;
@@ -3518,10 +3518,11 @@ input, select, textarea {
 			#banner .content .image {
 				border-radius: 100%;
 				display: inline-block;
-				height: 18em;
-				margin-left: 3em;
+				height: 15em;
+				margin-left: auto;
+				width: 15em;
 				vertical-align: middle;
-				width: 18em;
+				overflow: hidden;
 			}
 
 				#banner .content .image img {
@@ -3537,6 +3538,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
+		position: relative;
 		background: #272833;
 		padding: 6em 0;
 		text-align: center;
@@ -3589,6 +3591,20 @@ input, select, textarea {
 
 				#footer .copyright li a {
 					color: inherit;
+				}
+
+				#footer .footer-image {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					margin-bottom: 20px;
+					margin-right: 20px;
+					z-index: 999;
+				}
+				
+				#footer .footer-image img {
+					display: block;
+					width: auto; /* Ensure the image adjusts its width automatically */
 				}
 
 /* XLarge */
