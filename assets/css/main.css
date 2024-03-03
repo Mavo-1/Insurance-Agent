@@ -3519,7 +3519,7 @@ input, select, textarea {
 				border-radius: 100%;
 				display: inline-block;
 				height: 15em;
-				margin-left: auto;
+				margin-left: 2em;
 				width: 15em;
 				vertical-align: middle;
 				overflow: hidden;
@@ -3535,12 +3535,15 @@ input, select, textarea {
 		background-attachment: scroll;
 	}
 
+
+
+  
+
 /* Footer */
 
 	#footer {
-		position: relative;
 		background: #272833;
-		padding: 6em 0;
+		padding: 2em 0 0 0;
 		text-align: center;
 	}
 
@@ -3593,19 +3596,7 @@ input, select, textarea {
 					color: inherit;
 				}
 
-				#footer .footer-image {
-					position: absolute;
-					bottom: 0;
-					right: 0;
-					margin-bottom: 20px;
-					margin-right: 20px;
-					z-index: 999;
-				}
 				
-				#footer .footer-image img {
-					display: block;
-					width: auto; /* Ensure the image adjusts its width automatically */
-				}
 
 /* XLarge */
 
@@ -4109,7 +4100,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner .content {
-				padding: 3em 1.5625em 5.25em 1.5625em;
+				padding: 2em 1.5625em 5.25em 1.5625em;
 			}
 
 		/* Footer */

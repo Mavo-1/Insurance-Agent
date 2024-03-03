@@ -1,127 +1,124 @@
 <!DOCTYPE HTML>
-<!--
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Left Sidebar - Landed by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
+<head>
+    <title>Events</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.css" rel="stylesheet">
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+	<script>
 
-			<!-- Header -->
-			<header id="header">
-				<h1 id="logo"><a href="index.html">MG</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li>
-							<a href="index.html#four">Information</a>
-							<ul>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
-							</ul>
-						</li>
-						<li><a href="index.html#five">Contact Me</a></li>
+		document.addEventListener('DOMContentLoaded', function() {
+		  var calendarEl = document.getElementById('calendar');
+		  var calendar = new FullCalendar.Calendar(calendarEl, {
+			initialView: 'dayGridMonth'
+		  });
+		  calendar.render();
+		});
+  
+	  </script>
+</head>
+<body class="is-preload">
+<div id="page-wrapper">
+    <!-- Header -->
+    <header id="header">
+        <h1 id="logo"><a href="index.html">Mayra Garcia</a></h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#four">Information</a>
+                    <ul>
+                        <li><a href="left-sidebar.html">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="#five">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main" class="wrapper style1">
+        <div class="container">
+            <header class="major">
+                <h2>Events</h2>
+                <p>Join me at the following events to learn more about Medicare services and how they can benefit you.</p>
+            </header>
+            <div class="row gtr-150">
+                <div class="col-4 col-12-medium">
+                    <!-- Sidebar -->
+                    <section id="sidebar">
+                        <section>
+                            <h3>Upcoming Events</h3>
+                            <ul class="events">
+                                <li>
+                                    <h4>Medicare Workshop</h4>
+                                    <p>Date: March 15, 2024</p>
+                                    <p>Time: 2:00 PM - 4:00 PM</p>
+                                    <p>Location: ABC Community Center</p>
+                                </li>
+                                <li>
+                                    <h4>Meet and Greet</h4>
+                                    <p>Date: March 20, 2024</p>
+                                    <p>Time: 5:00 PM - 7:00 PM</p>
+                                    <p>Location: XYZ Cafe</p>
+                                </li>
+                            </ul>
+                            <footer>
+                                <ul class="actions">
+                                    <li><a href="#" class="button">View All Events</a></li>
+                                </ul>
+                            </footer>
+                        </section>
+                        
+                    </section>
+                </div>
+                <div class="col-8 col-12-medium imp-medium">
+                    <!-- Content -->
+                    <section id="content">
+                        <img class="image fit" src="images/MG Licensed Agent.jpg" alt="" />
+                        <h3>Join Me at My Next Event</h3>
+                        <p>Experience informative sessions and connect with others in the community. Don't miss out on this opportunity to learn more about Medicare and how it can benefit you.</p>
+                        <h3>Medicare Services</h3>
+                        <p>Learn about the various Medicare plans tailored to your needs and get expert advice from a licensed agent. Understand your options and make informed decisions.</p>
+                        <h3>Explore Healthcare Solutions</h3>
+                        <p>Contact me for more information or to RSVP for an event. Let's explore various healthcare solutions together and find the best options for your needs.</p>
+                    </section>
+
+					<section>
 						
-					</ul>
-				</nav>
-			</header>
+						<div id="calendar"></div>
+					</section>
+                </div>
+            </div>
+        </div>
+    </div>
 
-			<!-- Main -->
-				<div id="main" class="wrapper style1">
-					<div class="container">
-						<header class="major">
-							<h2>Left Sidebar</h2>
-							<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
-						</header>
-						<div class="row gtr-150">
-							<div class="col-4 col-12-medium">
-
-								<!-- Sidebar -->
-									<section id="sidebar">
-										<section>
-											<h3>Magna Feugiat</h3>
-											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button">Learn More</a></li>
-												</ul>
-											</footer>
-										</section>
-										<hr />
-										<section>
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Amet Lorem Tempus</h3>
-											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button">Learn More</a></li>
-												</ul>
-											</footer>
-										</section>
-									</section>
-
-							</div>
-							<div class="col-8 col-12-medium imp-medium">
-
-								<!-- Content -->
-									<section id="content">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<h3>Dolore Amet Consequat</h3>
-										<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at magna consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
-										<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique.</p>
-										<h3>Sed Magna Ornare</h3>
-										<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus.</p>
-										<ul>
-											<li>Faucibus orci lobortis ac adipiscing integer.</li>
-											<li>Col accumsan arcu mi aliquet placerat.</li>
-											<li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-											<li>Blandit massa non blandit tempor interdum.</li>
-											<li>Lacinia mattis arcu nascetur lobortis.</li>
-										</ul>
-									</section>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; MG | All rights reserved</li><li> <a href=""></a></li>
-				</ul>
-			</footer>
-
-	</div>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+   <!-- Footer -->
+   <footer id="footer">
+	<!-- Contact Information -->
+	<ul class="icons">
+		<li><span class="icon solid alt fa-phone"><span class="label">Phone</span></span> 469-965-5385 </li>
+		<li><span class="icon solid alt fa-envelope"><span class="label">Email</span></span> Mayrahgarcia@yahoo.com</li>
+	</ul>
+	
+	<!-- Social Media Icons -->
+	<ul class="icons">
+		<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+		<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+		<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+	</ul>
+	
+	<!-- Copyright Information -->
+	<ul class="copyright">
+		<li>&copy;All rights reserved</li>
+		<li>Privacy Policy</li> <!-- Add your Privacy Policy link if needed -->
+	</ul>
+	<a href="http://alexgarcia.netlify.app"><p>Powered by AGarcia Coding</p></a>
+	<!-- Rectangle Image
+	<div class="footer-image">
+		<img src="images/MG Licensed Agent.jpg" alt="Rectangle Image" width="200" height="100">
+	</div> -->
+</footer> 
